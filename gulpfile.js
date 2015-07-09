@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     bootlint = require('gulp-bootlint'),
-    bob = require('bob')
     webserver = require('gulp-webserver');
 
 gulp.task('js', function() {
