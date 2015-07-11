@@ -1,0 +1,6 @@
+.bgimage {
+  background-image: url('../images/reptiles.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+}
