@@ -1,6 +1,9 @@
-.bgimage {
-  background-image: url('../images/reptiles.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 200px;
+.icon {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.services section {
+  text-align: center;
 }
