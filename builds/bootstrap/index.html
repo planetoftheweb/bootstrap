@@ -14,52 +14,38 @@
   <div class="row">
     <section class="col-xs-12">
 
-      <h2>Inline Code</h2>
-      <p>To emphasize text, you can use the em tag.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">active</th>
+            <td>Default color to a particular row or cell</td>
+            </tr>
+          <tr>
+            <th scope="row">success</th>
+            <td>A successful or positive action</td>
+            </tr>
+          <tr>
+            <th scope="row">info</th>
+            <td>A neutral informative change or action</td>
+            </tr>
+          <tr>
+            <th scope="row">warning</th>
+            <td>A warning that might need attention</td>
+            </tr>
+          <tr>
+            <th scope="row">danger</th>
+            <td>Dangerous or potentially negative action</td>
+            </tr>
+        </tbody>
+      </table>
 
-      <h2>Control Keys</h2>
-      <p>To stop the execution of a process use control-c or q</p>
-
-      <h2>Variables</h2>
-      e = mc&sup2;
-
-      <h2>Short Script</h2>
-
-//replace IMG inside carousels with a background image
-$('#featured .item img').each(function() {
-  var imgSrc = $(this).attr('src');
-  $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-  $(this).remove();
-});
-
-<h4>Sample Output</h4>
-&lt;div class=&quot;item active&quot; style=&quot;background-image: url(images/carousel-lifestyle.jpg);&quot;&gt;&lt;/div&gt;
-
-
-      <h2>Long Script</h2>
-//replace IMG inside carousels with a background image
-$('#featured .item img').each(function() {
-  var imgSrc = $(this).attr('src');
-  $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-  $(this).remove();
-});
-
-//Use smooth scrolling when clicking on navigation
-$('.navbar a[href*=#]:not([href=#])').click(function() {
-  if (location.pathname.replace(/^\//,'') === 
-    this.pathname.replace(/^\//,'') && 
-    location.hostname === this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top-topoffset+2
-      }, 500);
-      return false;
-    } //target.length
-  } //click function
-}); //smooth scrolling
-
+      
     </section>
   </div><!-- row -->   
 </div><!-- content container -->
