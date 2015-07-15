@@ -14,59 +14,48 @@
   <div class="row">
     <section class="col-xs-12">
 
-      <h2>Inline Code</h2>
-      <p>To emphasize text, you can use the 
-      <code>&lt;em&gt;</code> tag.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Color</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Normal</th>
+            <td>Default</td>
+            <td>Default color to a particular row or cell</td>
+          </tr>
+          <tr class="active">
+            <th scope="row">active</th>
+            <td>Gray</td>
+            <td>Active color to a particular row or cell</td>
+          </tr>
+          <tr>
+            <th scope="row">success</th>
+            <td>Green</td>
+            <td>A successful or positive action</td>
+          </tr>
+          <tr>
+            <th scope="row">info</th>
+            <td>Blue</td>
+            <td>A neutral informative change or action</td>
+          </tr>
+          <tr>
+            <th scope="row">warning</th>
+            <td>Yellow</td>
+            <td>A warning that might need attention, but not too scary</td>
+          </tr>
+          <tr>
+            <th scope="row">danger</th>
+            <td>Red</td>
+            <td>Dangerous or potentially negative action</td>
+          </tr>
+        </tbody>
+      </table>
 
-      <h2>Control Keys</h2>
-      <p>To stop the execution of a process use 
-      <kbd>control-c</kbd> or <kbd>q</kbd></p>
-
-      <h2>Variables</h2>
-      <var>e</var> = <var>m</var><var>c</var>&sup2;
-
-      <h2>Short Script</h2>
-
-<pre>
-//replace IMG inside carousels with a background image
-$('#featured .item img').each(function() {
-  var imgSrc = $(this).attr('src');
-  $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-  $(this).remove();
-});  
-</pre>
-
-<h4>Sample Output</h4>
-<samp>
-&lt;div class=&quot;item active&quot; style=&quot;background-image: url(images/carousel-lifestyle.jpg);&quot;&gt;&lt;/div&gt;  
-</samp>
-
-
-      <h2>Long Script</h2>
-<pre class="pre-scrollable">
-//replace IMG inside carousels with a background image
-$('#featured .item img').each(function() {
-  var imgSrc = $(this).attr('src');
-  $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-  $(this).remove();
-});
-
-//Use smooth scrolling when clicking on navigation
-$('.navbar a[href*=#]:not([href=#])').click(function() {
-  if (location.pathname.replace(/^\//,'') === 
-    this.pathname.replace(/^\//,'') && 
-    location.hostname === this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top-topoffset+2
-      }, 500);
-      return false;
-    } //target.length
-  } //click function
-}); //smooth scrolling 
-</pre>
     </section>
   </div><!-- row -->   
 </div><!-- content container -->
