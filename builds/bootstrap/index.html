@@ -14,36 +14,51 @@
   <div class="row">
     <section class="col-xs-12">
 
-    <h2>List</h2>
-    <ol class="list-unstyled">
-      <li>Lorem ipsum</li>
-      <li>Velit
-        <ul>
-          <li>Eligendi modi soluta</li>
-          <li>Architecto tempora</li>
-        </ul>
-      </li>
-      <li>Obcaecati molestiae</li>
-    </ol>
+      <h2>Inline Code</h2>
+      <p>To emphasize text, you can use the em tag.</p>
 
-    <h2>Another List</h2>
-    <ul class="list-inline">
-      <li>quam</li>
-      <li>porro</li>
-      <li>quasi</li>
-    </ul>
+      <h2>Control Keys</h2>
+      <p>To stop the execution of a process use control-c or q</p>
 
-    <h2>Definitions</h2>
-    <dl class="dl-horizontal">
-      <dt>Lorem</dt>
-      <dd>Ipsum dolor sit amet, consectetur adipisicing elit. Esse quo ducimus dolorum dolore ipsam unde, facere explicabo quae natus alias deserunt quibusdam voluptatem, officiis itaque rerum magni eius odio mollitia!</dd>
+      <h2>Variables</h2>
+      e = mc&sup2;
 
-      <dt>Sed</dt>
-      <dd>Doloremque quam porro ab ratione facilis, magni quo, velit impedit facere, error, rem obcaecati asperiores veniam vitae. Culpa vel dolorem fugiat odit numquam voluptates ut, quasi minima est unde? Lorem*5</dd>
+      <h2>Short Script</h2>
 
-      <dt>Quia</dt>
-      <dd>Corporis ut, quisquam sed optio debitis eveniet ad provident soluta, aspernatur ducimus placeat illum. Similique quas odio repudiandae perferendis facilis quos, consectetur suscipit, ad velit error, enim, minus quidem!</dd>
-    </dl>
+//replace IMG inside carousels with a background image
+$('#featured .item img').each(function() {
+  var imgSrc = $(this).attr('src');
+  $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+  $(this).remove();
+});
+
+<h4>Sample Output</h4>
+&lt;div class=&quot;item active&quot; style=&quot;background-image: url(images/carousel-lifestyle.jpg);&quot;&gt;&lt;/div&gt;
+
+
+      <h2>Long Script</h2>
+//replace IMG inside carousels with a background image
+$('#featured .item img').each(function() {
+  var imgSrc = $(this).attr('src');
+  $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+  $(this).remove();
+});
+
+//Use smooth scrolling when clicking on navigation
+$('.navbar a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') === 
+    this.pathname.replace(/^\//,'') && 
+    location.hostname === this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top-topoffset+2
+      }, 500);
+      return false;
+    } //target.length
+  } //click function
+}); //smooth scrolling
 
     </section>
   </div><!-- row -->   
