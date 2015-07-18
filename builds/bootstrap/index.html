@@ -15,30 +15,41 @@
     <section class="col-xs-12">
 
 <form>
-  <label for="inputName">Name</label>
-  <input type="text" id="inputName" 
-    placeholder="Name">
+  <div class="form-group">
+    <label for="inputName">Name</label>
+    <input class="form-control" type="text" id="inputName" 
+      placeholder="Name">
+  </div>
 
+<div class="form-group">
   <label for="inputEmail">Email</label>
-  <input type="email" id="inputEmail" 
+  <input class="form-control" type="email" id="inputEmail" 
     placeholder="Email">
+</div>
 
+<div class="form-group">
   <label for="selectSite">Site</label>
-  <select id="selectSite">
+  <select class="form-control" id="selectSite">
     <option>Choose...</option>
     <option>lynda.com</option>
     <option>raybo.org</option>
     <option>iviewsource.com</option>
-  </select>
+  </select>  
+</div>
 
-  <input id="inputAddList" type="checkbox">
-  <label for="inputAddList">
+<div class="checkbox">
+  <label>
+   <input id="inputAddList" type="checkbox">
   Add me to e-mail blast</label>
+</div>
 
+<div class="form-group">
   <label for="inputComments">Comments</label>
-  <textarea id="inputComments"></textarea>
+  <textarea class="form-control" id="inputComments"></textarea>  
+</div>
 
-  <input type="submit" value="submit">
+  <input class="btn btn-default pull-right"
+    type="submit" value="submit">
 </form>
 
 
