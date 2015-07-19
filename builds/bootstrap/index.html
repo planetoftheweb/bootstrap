@@ -16,27 +16,30 @@
 
 <form>
   <div class="form-group">
-    <label for="inputName">Name</label>
-    <input class="form-control" type="text"
-      id="inputName" placeholder="Your Name">
+    <label for="inputEmail">
+      Email address
+    </label>
+    <input type="email" class="form-control"
+      id="inputEmail" placeholder="Email">
   </div>
 
   <div class="form-group">
-    <label class="radio-inline">
-      <input name="options" type="radio">
-      One
-    </label>
-
-    <label class="radio-inline">
-      <input name="options" type="radio">
-      Two
-    </label>
+    <label
+      for="inputPassword">Password</label>
+    <input type="password" class="form-control"
+      id="inputPassword" placeholder="Password">
   </div>
 
-
-  <input class="btn btn-default"
-    type="submit" value="submit">
+  <button type="submit"
+    class="btn btn-default">Sign in</button>
+  
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
 </form>
+
 
 
     </section>
