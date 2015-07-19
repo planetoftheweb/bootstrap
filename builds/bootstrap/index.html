@@ -14,33 +14,45 @@
   <div class="row">
     <section class="col-xs-12">
 
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="inputEmail">
-      Email address
-    </label>
-    <input type="email" class="form-control"
-      id="inputEmail" placeholder="Email">
-  </div>
+<form>
+<div class="form-group">
+  <label for="inputName">Name</label>
+  <input class="form-control" type="text"
+    id="inputName" placeholder="Name">
+</div>
 
-  <div class="form-group">
-    <label class="sr-only"
-      for="inputPassword">Password</label>
-    <input type="password" class="form-control"
-      id="inputPassword" placeholder="Password">
-  </div>
+<div class="form-group">
+  <label for="inputEmail">Email</label>
+  <input class="form-control" type="email"
+    id="inputEmail" placeholder="Email">  
+</div>
 
-  <button type="submit"
-    class="btn btn-default">Sign in</button>
-  
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Remember me
-    </label>
-  </div>
+<div class="form-group">
+  <label for="selectSite">Site</label>
+  <select class="form-control" id="selectSite">
+    <option>Choose...</option>
+    <option>lynda.com</option>
+    <option>raybo.org</option>
+    <option>iviewsource.com</option>
+  </select>
+</div>
+
+<div class="checkbox">
+  <label>
+    <input id="inputAddList"
+      type="checkbox">Add me to e-mail blast
+  </label>
+</div>
+
+<div class="form-group">
+  <label for="inputComments">Comments</label>
+  <textarea class="form-control" 
+    id="inputComments"></textarea>
+</div>
+
+<input type="submit" class="btn btn-default"  
+  value="submit">
 </form>
-
-
 
     </section>
   </div><!-- row -->   
