@@ -14,17 +14,64 @@
   <div class="row">
     <section class="col-xs-12">
 
-<form>
+<form class="form-horizontal">
+<div class="form-group">
+  <label class="col-sm-2 control-label"
+    for="inputName">Name</label>
+  <div class="col-sm-10">
+  <input class="form-control" type="text"
+    id="inputName" placeholder="Name">
+  </div>
+</div>
 
-    <div class="form-group">
-      <div class="input-group">
-        <input type="text" class="form-control"
-          placeholder="Search terms">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Search</button>
-        </span>
-      </div>
-    </div>
+<div class="form-group">
+  <label class="col-sm-2 control-label"
+    for="inputEmail">Email</label>
+  <div class="col-sm-10">
+  <input class="form-control" type="email"
+    id="inputEmail" placeholder="Email">      
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label"
+    for="selectSite">Site</label>
+  <div class="col-sm-10">
+  <select class="form-control" id="selectSite">
+    <option>Choose...</option>
+    <option>lynda.com</option>
+    <option>raybo.org</option>
+    <option>iviewsource.com</option>
+  </select>
+  </div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-10 col-sm-offset-2">
+<div class="checkbox">
+  <label>
+    <input id="inputAddList"
+      type="checkbox">Add me to e-mail blast
+  </label>  
+</div>
+</div>
+</div>
+
+<div class="form-group">
+  <label class="col-sm-2 control-label"
+    for="inputComments">Comments</label>
+  <div class="col-sm-10">
+  <textarea class="form-control" 
+    id="inputComments"></textarea>
+  </div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-10 col-sm-offset-2">
+  <input type="submit" class="btn btn-default"  
+  value="submit">
+</div>
+</div>
 
 </form>
 
