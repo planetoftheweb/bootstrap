@@ -14,7 +14,7 @@
   <div class="row">
     <section class="col-xs-12">
 
-<ol>
+<ol class="breadcrumb">
   <li><a href="#">home</a></li>
   <li><a href="#">services</a></li>
   <li><a href="#">grooming</a></li>
@@ -23,16 +23,30 @@
 <h2>Grooming</h2>
 <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
 
-<ul>
-  <li><a href="#">Older</a></li>
-  <li><a href="#">Newer</a></li>
-</ul>
+<nav>
+<ul class="pager">
+  <li class="previous disabled">
+    <a href="#">
+      <span aria-hidden="true">&larr;</span> Older</a>
+  </li>
+  <li class="next">
+    <a href="#">Newer
+    <span aria-hidden="true">&rarr;</span>
+    </a></li>
+</ul>  
+</nav>
 
-<ol>
+<nav>
+<ol class="pagination pagination">
+  <li><a href="#" 
+    aria-label="Previous">&laquo;</a></li>
   <li><a href="#">1</a></li>
   <li><a href="#">2</a></li>
   <li><a href="#">3</a></li>
+  <li><a href="#" 
+    aria-label="Next">&raquo;</a></li>
 </ol>
+</nav>
 
     </section>
   </div><!-- row -->   
