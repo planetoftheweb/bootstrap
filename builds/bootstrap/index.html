@@ -40,8 +40,35 @@
 
 <p>Your pet will get the most out of his or her visit to Wisdom, if you’re able to describe your observations of him or her over the last several days prior to your visit. This includes paying close attention to your pet’s eating habits, bowl-movement frequency, mood, activity level, sleeping habits, or any unusual behaviors such as limping or excessive scratching. Even the slightest change in a pet’s behavior can indicate the start of a health problem.</p>
 
-<h3>Vaccination Policy</h3>
+<button type="button" class="btn btn-warning"
+  data-toggle="modal" data-target="#policy">
+  Vaccination Policy</button>
+
+<div class="modal fade" 
+  id="policy" tabindex="-1" role="dialog"
+  aria-labelledby="modalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close"
+          data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title" id="modalLabel">Vaccination Policy</h3>
+      </div><!-- modal-header -->
+      <div class="modal-body">
 <p>Dogs and cats are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule. At Wisdom, we approach vaccinations on a patient by patient basis, depending on the health and age of a dog, while also taking into account the vaccination schedules published by leading veterinary medical schools.</p>
+      </div><!-- modal-body -->
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal"
+          class="btn btn-default">
+          Close
+        </button>
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
 
     </section>
   </div><!-- row -->   
