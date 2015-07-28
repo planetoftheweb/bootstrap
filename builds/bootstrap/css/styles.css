@@ -6,3 +6,8 @@ header {
   background: url('../images/headerimage.jpg') center center no-repeat;
   height: 600px;
 }
+
+.navbar-default {
+  width: 100%;
+  z-index: 100;
+}
